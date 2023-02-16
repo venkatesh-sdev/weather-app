@@ -1,0 +1,10 @@
+:root {
+  --font-color: rgb(202, 202, 202);
+}
+
+.LoginForm { 
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
