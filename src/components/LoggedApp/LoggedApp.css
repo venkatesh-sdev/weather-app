@@ -1,0 +1,5 @@
+.Logged_App_Container{
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
