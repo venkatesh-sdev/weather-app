@@ -9,7 +9,7 @@ const Input = ({ inputValue, inputRef, setInputValue, prevRef, nextRef, spanData
             maxLength='1'
             pattern='[0-9]'
             onKeyDown={e => {
-                alert(e.which)
+                alert(e.keyCode)
                 if (e.key === 'Backspace') {
                     setInputValue('')
                     prevRef.current.focus();
