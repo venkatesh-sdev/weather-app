@@ -4,14 +4,17 @@
   backdrop-filter: blur(px);
   overflow: hidden;
   position: relative;
+  display: grid;
+  place-items: center;
 }
 
 .LockScreen_Content {
-  position: absolute;
-  bottom:50px;
-  left:50px;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap:40px;
+  flex-direction: column;
   width: 90%;
   overflow: hidden;
 
@@ -60,7 +63,7 @@
 .LockScreen_Login {
   width: 100px;
   height: 50px;
-  background-color: rgba(120, 120, 120, 0.244);
+  background-color: rgba(120, 120, 120, 0.61);
   border-radius: 10px;
   display: flex;
   align-items: center;
