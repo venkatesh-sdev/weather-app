@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { setCheckData, setShowLogged } from '../../redux/data';
+import { setCheckData, setLockShow, setShowLogged } from '../../redux/data';
 import Input from '../Input/Input';
 import './LockPinForm.css'
 
-const LockPinForm = () => {
+const LockPinForm = ({ setShow }) => {
     const dispatch = useDispatch();
     const data = useSelector(state => state.loginData)
     const [inputValue1, setInputValue1] = useState('');
@@ -27,7 +27,7 @@ const LockPinForm = () => {
     useEffect(() => {
         if (inputValue4) {
             dispatch(setCheckData([inputValue1, inputValue2, inputValue3, inputValue4]))
-            dispatch(setShowLogged())
+            dispatch(setShowLogged(true))
             // inputRef1.current.focus();
             // setInputValue1('');
             // setInputValue2('');
@@ -85,7 +85,7 @@ const LockPinForm = () => {
                 <span ref={spanRef}></span>
 
             </div>
-            <button onClick={() => { console.log(data) }}>Back</button>
+            <button onClick={() => setShow(false)}>Back</button>
         </motion.div>
     )
 }

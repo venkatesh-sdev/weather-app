@@ -5,15 +5,15 @@ import LoggedApp from './components/LoggedApp/LoggedApp'
 import LoginForm from './components/LoginFrom/LoginForm'
 
 const App = () => {
-  const data = useSelector(state => state.loginData);
+  const data = useSelector(state=>state.loginData);
   console.log(data)
   return (
     <div className='App'>
       {
-        data.showLogged ?
-          <LoggedApp />
-          :
-          <LoginForm />
+        data.showLogged?
+          <LoggedApp/>
+        :
+        <LoginForm  />
       }
     </div>
   )

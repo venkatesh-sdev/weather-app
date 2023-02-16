@@ -8,10 +8,7 @@ const loginData = createSlice({
     },
     reducers: {
         setShowLogged: (state, actions) => {
-            state.showLogged = true;
-        },
-        setShowLoggedOut: (state, actions) => {
-            state.showLogged = false;
+            state.showLogged = actions.payload;
         },
         setCheckData: (state, actions) => {
             state.checkData = actions.payload;
@@ -19,5 +16,5 @@ const loginData = createSlice({
     }
 })
 
-export const { setShowLogged, setShowLoggedOut, setCheckData } = loginData.actions;
+export const { setShowLogged, setLockShow, setCheckData } = loginData.actions;
 export default loginData.reducer;
