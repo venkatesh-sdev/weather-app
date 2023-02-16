@@ -3,12 +3,13 @@
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(px);
   overflow: hidden;
+  position: relative;
 }
 
 .LockScreen_Content {
   position: absolute;
-  bottom: 50px;
-  left: 50px;
+  bottom:50px;
+  left:50px;
   display: flex;
   justify-content: space-between;
   width: 90%;
