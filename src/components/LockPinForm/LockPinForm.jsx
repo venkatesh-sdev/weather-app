@@ -12,7 +12,7 @@ const LockPinForm = ({ setShow }) => {
     const [inputValue2, setInputValue2] = useState('');
     const [inputValue3, setInputValue3] = useState('');
     const [inputValue4, setInputValue4] = useState('');
-    const [animateError, setaAnimateError] = useState(false)
+    const [animateError, setAnimateError] = useState(false)
 
     const inputRef1 = useRef();
     const inputRef2 = useRef();
@@ -27,20 +27,26 @@ const LockPinForm = ({ setShow }) => {
     useEffect(() => {
         if (inputValue4) {
             dispatch(setCheckData([inputValue1, inputValue2, inputValue3, inputValue4]))
-            dispatch(setShowLogged(true))
-            // inputRef1.current.focus();
-            // setInputValue1('');
-            // setInputValue2('');
-            // setInputValue3('');
-            // setInputValue4('');
-            // setaAnimateError(true);
 
+            if (inputValue1 === '1' && inputValue2 === '2' && inputValue3 === '3' && inputValue4 === '4') {
+                dispatch(setShowLogged(true))
+            } else {
+                inputRef1.current.focus();
+                setInputValue1('');
+                setInputValue2('');
+                setInputValue3('');
+                setInputValue4('');
+                setAnimateError(true);
+                setTimeout(() => {
+                    setAnimateError(false)
+                }, 100)
+            }
         }
     }, [inputValue4])
 
     return (
         <motion.div
-            initial={{ scale: 2, opacity: 0.5 }}
+            initial={{ scale: 3, opacity: 0 }}
             transition={{ duration: 0.5 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ translateY: '-500px' }}

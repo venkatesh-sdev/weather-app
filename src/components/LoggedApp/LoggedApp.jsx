@@ -1,11 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 import './LoggedApp.css'
 const LoggedApp = () => {
   return (
-    <div className='Logged_App_Container'>
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{duration:0.3}}
+    exit={{opacity:0}}
+    className='Logged_App_Container'>
     <h1>Hello user</h1>
-    </div>
-  )
+    </motion.div>
+  ) 
 }
 
 export default LoggedApp
