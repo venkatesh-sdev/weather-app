@@ -9,7 +9,7 @@ const LoggedApp = () => {
     transition={{duration:0.3}}
     exit={{opacity:0}}
     className='Logged_App_Container'>
-    <h1>Hello user</h1>
+    
     </motion.div>
   ) 
 }
