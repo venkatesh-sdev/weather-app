@@ -4,14 +4,10 @@ const loginData = createSlice({
     name: 'loginData',
     initialState: {
         showLogged: false,
-        checkData: []
     },
     reducers: {
         setShowLogged: (state, actions) => {
             state.showLogged = actions.payload;
-        },
-        setCheckData: (state, actions) => {
-            state.checkData = actions.payload;
         }
     }
 })

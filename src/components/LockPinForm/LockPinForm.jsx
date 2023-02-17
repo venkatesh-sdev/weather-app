@@ -26,7 +26,6 @@ const LockPinForm = ({ setShow }) => {
 
     useEffect(() => {
         if (inputValue4) {
-            dispatch(setCheckData([inputValue1, inputValue2, inputValue3, inputValue4]))
 
             if (inputValue1 === '1' && inputValue2 === '2' && inputValue3 === '3' && inputValue4 === '4') {
                 dispatch(setShowLogged(true))

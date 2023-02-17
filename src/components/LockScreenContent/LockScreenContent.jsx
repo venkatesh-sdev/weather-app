@@ -24,7 +24,7 @@ const LockScreenContent = ({ setShow }) => {
             <div className='LockScreen_Content'>
                 <motion.div
                     initial={{ translateX: '-500px' }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 0.5 }}
                     animate={{ translateX: '0' }}
                     exit={{ translateX: '-500px' }}
                     className='LockScreen_Time'>
