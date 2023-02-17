@@ -4,8 +4,9 @@
   backdrop-filter: blur(px);
   overflow: hidden;
   position: relative;
+  color:white;
   display: grid;
-  
+  font-family: 'Courier New', Courier, monospace;
   place-items: center;
 }
 
@@ -24,6 +25,9 @@
 .LockScreen_Time {
   vertical-align: baseline;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 .LockScreen_Time > h1 {
@@ -44,6 +48,7 @@
 .LockDegree > h2 {
   color: var(--font-color);
 }
+
 
 .LockDegree_Super {
   vertical-align: super;
@@ -68,18 +73,19 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
-  margin-top: 15px;
-  margin-right:40px;
   backdrop-filter: blur(30px);
+  
 }
 
 .LockScreen_Login:hover svg {
-  transform: translateX(30px);
+  transform: translateX(25px);
 }
 
 .LockScreen_Login > svg {
   font-size: 50px;
   color: var(--font-color);
-  transition: all 0.2s ease-in-out;
+  transform: translateX(-20px);
+  transition: all 0.5s ease-in-out;
 }
