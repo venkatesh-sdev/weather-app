@@ -44,12 +44,11 @@ const LockPinForm = ({ setShow }) => {
     }, [inputValue4])
 
     return (
-        <AnimatePresence>
             <motion.div
                 initial={{ scale: 3, opacity: 0 }}
-                transition={{ duration: 0.5 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 3,opacity:0 }}
+                transition={{ duration: 0.5 }}
                 className='formContainer'>
                 <div className={`inputContainer ${animateError ? 'animateError' : ''}`}>
                     <Input
@@ -91,9 +90,8 @@ const LockPinForm = ({ setShow }) => {
                     <span ref={spanRef}></span>
 
                 </div>
-                <button onClick={() => setShow(false)}>Back</button>
+                <button className='button' onClick={() => setShow(false)}>Back</button>
             </motion.div>
-        </AnimatePresence>
     )
 }
 

@@ -40,7 +40,7 @@ input:focus{
     outline-offset: 2px;
 }
 
-button{
+.button{
     background-color: rgba(128, 128, 128, 0.568);
     border:none;
     font-size:1.2rem;
@@ -52,7 +52,7 @@ button{
     transition: all .3s ease-in-out;
     transform: translateY(-150px);
 }
-button:hover{
+.button:hover{
     background-color: gray;
 }
 

@@ -1,25 +1,22 @@
 .LockScreen_Content_Container {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(px);
   overflow: hidden;
   position: relative;
-  color:white;
+  color: white;
   display: grid;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   place-items: center;
 }
 
 .LockScreen_Content {
-
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:40px;
+  gap: 40px;
   flex-direction: column;
   width: 90%;
   overflow: hidden;
-
 }
 
 .LockScreen_Time {
@@ -49,7 +46,6 @@
   color: var(--font-color);
 }
 
-
 .LockDegree_Super {
   vertical-align: super;
   margin-left: 10px;
@@ -69,23 +65,27 @@
 .LockScreen_Login {
   width: 100px;
   height: 50px;
-  background-color: rgba(120, 120, 120, 0.61);
+  background-color: rgba(120, 120, 120, 0.475);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  backdrop-filter: blur(30px);
-  
+  backdrop-filter: blur(1px);
 }
 
 .LockScreen_Login:hover svg {
   transform: translateX(25px);
 }
 
+.LockScreen_Login:hover {
+  background-color: rgba(120, 120, 120, 0.776);
+}
+
 .LockScreen_Login > svg {
   font-size: 50px;
   color: var(--font-color);
   transform: translateX(-20px);
-  transition: all 0.5s ease-in-out;
+  transition: all .5s ease;
+
 }
