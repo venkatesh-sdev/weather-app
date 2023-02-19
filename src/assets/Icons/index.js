@@ -1,10 +1,10 @@
-import Instagram from './Instagram.png'
-import LinkedIn from './LinkedIn.png'
-import Messages from './Messenger.png'
-import Spotify from './Spotify.png'
-import Twitter from './Twitter.png'
-import Whatsapp from './Whatsapp.png';
-import TikTok from './Tiktok.png'
+import Instagram from './Instagram.jpg'
+import LinkedIn from './LinkedIn.jpg'
+import Messages from './Messenger.jpg'
+import Spotify from './Spotify.jpg'
+import Twitter from './Twitter.jpg'
+import Whatsapp from './Whatsapp.jpg'
+import TikTok from './Tiktok.jpg'
 
 export const Icons = {
     Instagram,
